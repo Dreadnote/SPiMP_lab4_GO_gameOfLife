@@ -31,10 +31,14 @@ cd game-of-life
 ```
 
 # Запуск
+```bash
 go run main.go
+```
 
 # Компиляция в .exe
+```bash
 go build -ldflags="-s -w" -o gameoflife.exe main.go
+```
 
 ## Особенности
 - Поле 60×35 клеток

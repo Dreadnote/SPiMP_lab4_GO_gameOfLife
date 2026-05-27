@@ -131,7 +131,7 @@ func updateGame() {
 	}
 }
 
-// Подсчет живых соседей (границы считаются мертвыми)
+// Подсчет живых соседей
 func countNeighbors(x, y int) int {
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -237,8 +237,4 @@ func clearGrid() {
 			grid[y][x] = false
 		}
 	}
-}
-
-func init() {
-	rand.Seed(time.Now().UnixNano())
 }
